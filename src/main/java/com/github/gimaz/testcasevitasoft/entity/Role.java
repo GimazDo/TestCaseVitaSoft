@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Role{
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -22,8 +22,8 @@ public class Role{
     private String name;
 
     private LocalDateTime createdTime;
-    public Role(String name)
-    {
+
+    public Role(String name) {
         this.name = name;
     }
 }
